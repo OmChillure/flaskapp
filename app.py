@@ -23,9 +23,9 @@ llm = HuggingFaceHub(
 
 llm_chain = LLMChain(prompt=prompt, llm=llm)
 
-@app.route('/')
-def home():
-    return render_template('index.html')
+# @app.route('/')
+# def home():
+#     return render_template('index.html')
 
 @app.route('/get-response')
 @cross_origin()
